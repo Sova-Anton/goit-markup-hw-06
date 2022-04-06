@@ -482,6 +482,7 @@ img {
   color: #ffffff;
 }
 .footer-adress {
+  width: 231px;
   margin-top: 30px;
   margin-right: 70px;
 }
@@ -502,6 +503,7 @@ img {
   color: var(--akcent-text);
 }
 .footer-title {
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -511,6 +513,7 @@ img {
   color: #ffffff;
 }
 .footer-social-list {
+  margin-right: 93px;
   display: flex;
   justify-content: center;
 }
@@ -532,6 +535,48 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--svg-akcent);
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form input {
+  margin-right: 12px;
+  width: 358px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: inherit;
+}
+.footer-form input::placeholder {  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 200px;
+  padding: 10px 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;   
+  letter-spacing: 0.06em;  
+  color: #FFFFFF;
+  cursor: pointer;
+
+  background-color: var(--akcent-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
 }
 
 /* Страница Портфолио */
