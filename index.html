@@ -63,12 +63,65 @@
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
+            <div class="hero-modal">
               <button class="hero-btn-close" type="button" data-modal-close>
                 <svg width="18" height="18">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <form class="hero-modal-form">
+                <h2 class="hero-modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+                <label class="hero-modal-field">
+                  <span class="hero-modal-label">Имя</span>
+                  <span class="hero-position-icon">
+                    <input class="hero-modal-input" type="text" name="name" />
+                    <svg class="hero-modal-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                  </span>
+                </label>
+
+                <label class="hero-modal-field">
+                  <span class="hero-modal-label">Телефон</span>
+                  <span class="hero-position-icon">
+                    <input class="hero-modal-input" type="tel" name="phone" />
+                    <svg class="hero-modal-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="hero-modal-field">
+                  <span class="hero-modal-label">Почта</span>
+                  <span class="hero-position-icon">
+                    <input class="hero-modal-input" type="email" name="mail" />
+                    <svg class="hero-modal-icon" width="18" height="18">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="hero-field-textarea">
+                  <span class="hero-modal-label">Комментарий</span>
+                  <textarea
+                    class="hero-modal-textarea"
+                    name="comment"
+                    rows="5"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </label>
+
+                <label class="hero-modal-check">
+                  <p class="hero-checkbox-text">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a class="hero-checkbox-link link" href="">Условия договора</a>
+                  </p>
+                  <input class="hero-check-input" type="checkbox" name="agree" />
+                  <svg class="hero-check-box" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </label>
+                <button class="hero-form-btn" type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
@@ -77,7 +130,7 @@
       <!--Особенности  -->
       <section class="advantages section">
         <div class="container">
-          <h2 hidden>Особенности</h2>
+          <h2 class="visually-hidden">Особенности</h2>
           <ul class="advantages-list list">
             <li class="advantages-item">
               <div class="advantages-icon">
