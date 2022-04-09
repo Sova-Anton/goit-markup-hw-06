@@ -245,7 +245,7 @@ img {
 
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--cubic);
+  transition: opacity var(--cubic), visibility var(--cubic) ;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -289,7 +289,7 @@ img {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
+outline: none;
   cursor: pointer;
   transition: fill var(--cubic);
 }
@@ -436,7 +436,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   width: 200px;
-  height: 50px;  
+  height: 50px;
 
   font-weight: 700;
   font-size: 16px;
@@ -454,7 +454,7 @@ img {
 }
 .hero-form-btn:hover,
 .hero-form-btn:focus {
-  background-color: #188CE8;;
+  background-color: #188ce8;
 }
 
 /* Особенности */
@@ -512,6 +512,7 @@ img {
 .work-item {
   position: relative;
   max-width: 370px;
+  z-index: -1;
 }
 .work-item-title {
   position: absolute;
@@ -731,6 +732,8 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
+outline: none;
+  color: #ffffff;
   background-color: inherit;
 }
 .footer-form input::placeholder {
